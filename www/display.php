@@ -10,7 +10,7 @@
    //--------------------------------------------------------------------------
   // 2) Query database for data
   //--------------------------------------------------------------------------
-  $sql="select * from login";
+  $sql="select * from beneficiary";
   $result = mysqli_query($con,$sql) or die(mysql_error());            //query
   //fetch result
   //--------------------------------------------------------------------------
@@ -21,7 +21,15 @@
         while($row=mysqli_fetch_array($result)){   
 			$username = @$row["username"]; 
 			$password = @$row["password"]; 
-			
+			$name=@row['name'];
+      $mother_name=@$row['mother_name'];
+      $id_mark1=@$row['id_mark1'];
+      $id_mark2=@$row['id_mark2'];
+      $dob=@$row['dob'];
+      $loc=@$row['loc'];
+      $cid=@$row['cid'];
+      $loc=@$row['loc'];
+      $fid=@$row['fid'];
 			
 			$data = array( 
 			'username' => $username,

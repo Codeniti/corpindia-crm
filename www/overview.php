@@ -35,11 +35,14 @@
 					</div>
 					<div class="navbar">
 						  <div class="navbar-inner" style="background:#ff3300;margin-top:-20px; height:100px;">
-						    <a class="brand" href="#" style="color:black;">CORP INDIA</a>
+						    <a class="brand" href="http://corpindia.org/" style="color:black;"><h3><strong>CORP INDIA</strong></h3></a>
 						    <ul class="nav">
-						      <li class="active"><a href="#">Home</a></li>
-						      <li><a href="#">Link</a></li>
-						      <li><a href="#">Link</a></li>
+						      <li><a href="centredisplay.php" style="color:black;"><h3><strong>CENTRE DETAILS</strong></h3></a></li>
+						      <li><a href="overview.php" style="color:black;"><h3><strong>LAST 10 BENEFICIARIES</strong></h3></a></li>
+						      <li><a href="#loginModal" data-toggle="modal" style="color:black;"><h3><strong>LOGIN</strong></h3></a></li>
+						      <li><form class="navbar-search pull-right" style="margin-top:20px;margin-left:80%;">
+                				 <input  type="text" class="search-query" placeholder="Search">
+            				</form></li>
 						    </ul>
 						  </div>
 					</div>

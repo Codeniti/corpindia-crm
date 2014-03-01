@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 		<head>
-				<title>Framework</title>
+				<title>Corp India</title>
 				 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 				<!-- Bootstrap -->
 				<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
@@ -35,14 +35,29 @@
 					</div>
 					<div class="navbar">
 						  <div class="navbar-inner" style="background:#ff3300;margin-top:-20px; height:100px;">
-						    <a class="brand" href="#" style="color:black;">CORP INDIA</a>
+						    <a class="brand" href="http://corpindia.org/" style="color:black;"><h3><strong>CORP INDIA</strong></h3></a>
 						    <ul class="nav">
-						      <li class="active"><a href="#">Home</a></li>
-						      <li><a href="#">Link</a></li>
-						      <li><a href="#">Link</a></li>
+						      <li><a href="centredisplay.php" style="color:black;"><h3><strong>CENTRE DETAILS</strong></h3></a></li>
+						      <li><a href="overview.php" style="color:black;"><h3><strong>LAST 10 BENEFICIARIES</strong></h3></a></li>
+						      <li><a href="#loginModal" data-toggle="modal" style="color:black;"><h3><strong>LOGIN</strong></h3></a></li>
+						      <li><form class="navbar-search pull-right" style="margin-top:20px;margin-left:80%;">
+                				 <input  type="text" class="search-query" placeholder="Search">
+            				</form></li>
 						    </ul>
 						  </div>
 					</div>
+					<div class="container-fluid">
+						<div class="row-fluid">
+								<h2 style="color:#00a0b0;">"Give a man a fish and he will live for a day. Teach him to fish and he will live a lifetime."</h2>
+								<p>We aim:</p>
+								<p>1. To create an awareness of self-worth.<br>  
+								2. To provide facilities for improving the conditions of life, specifically for the poorer sections of society<br>
+								3. To stimulate self-reliance and development within communities.<br>
+								4. To encourage, train and enable local people to assume community responsibilities.<br> 
+								5. To encourage all segments of society, irrespective of caste, creed, religion or economic situation, to cooperate on long-term developments. </p>
+						</div>
+					</div>
+					
 				<!--<div id="topPanel" class="row-fluid" style="background:#ff3300;margin-top:-20px; height:100px; position:fixed;">
 				</div>-->
 						<!--<div class="navbar">
@@ -66,9 +81,9 @@
 							 </div>
 						</div>-->
 				<!--</div>-->
-				<div id="content" class="row-fluid" style="position:absolute;top:400px;">
+				<div id="content" class="row-fluid" style="position:absolute;top:600px;">
 						<!-- Button to trigger modal -->
-						<a href="#BModal" role="button" class="btn" data-toggle="modal">Enter Beneficiary Details</a>
+						<a href="#BModal" role="button" class="btn btn-large btn-primary" style="position:absolute;margin-left:10%;" data-toggle="modal">Enter Beneficiary Details</a>
 						 
 						<!-- Modal -->
 						<div id="BModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="BModalLabel" aria-hidden="true">
@@ -78,7 +93,7 @@
 						  </div>
 						  <div class="modal-body">
 						    		<div class="row-fluid">
-							<form class="form-horizontal" action="insertbene.php" method="post">
+							<form class="form-horizontal" action="" method="post">
 								  <div class="control-group">
 									<label class="control-label" for="name">Enter Name</label>
 									<div class="controls">
@@ -145,7 +160,7 @@
 									  <input type="text" name="fid" placeholder="Enter finger print id">
 									</div>
 								  </div>
-								<button type="submit" class="btn btn-primary">Save changes</button>
+								<button class="btn btn-primary" type="submit">Save changes</button>
 
 								  
 								</form>
@@ -155,7 +170,7 @@
 						    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
 						  </div>
 						</div>
-					<a href="#CModal" role="button" class="btn" data-toggle="modal" style="position:absolute;top:100px;">Enter Centre Details</a>
+					<a href="#CModal" role="button" class="btn btn-large btn-info" data-toggle="modal" style="position:absolute;top:200px;margin-left:50%;">Enter Centre Details</a>
 					<!-- Modal -->
 						<div id="CModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="CModalLabel" aria-hidden="true">
 						  <div class="modal-header">
@@ -164,7 +179,7 @@
 						  </div>
 						  <div class="modal-body">
 						    		<div class="row-fluid">
-							<form class="form-horizontal" action="insertcentre.php" method="post">
+							<form class="form-horizontal" action="" method="post">
 								  <div class="control-group">
 									<label class="control-label" for="cid">Enter Centre id</label>
 									<div class="controls">
@@ -183,7 +198,7 @@
 									  <input type="text" name="loc" placeholder="Enter location">
 									</div>
 								  </div>
-								  <button type="submit" class="btn btn-primary">Save changes</button>
+								  <button class="btn btn-primary">Save changes</button>
 							</form>
 							</div>
 						 </div>
@@ -193,7 +208,7 @@
 						  </div>
 						</div>
 
-						<a href="#SModal" role="button" class="btn" data-toggle="modal" style="position:absolute;top:200px;">Enter Service Details</a>
+						<a href="#SModal" role="button" class="btn btn-large btn-success" data-toggle="modal" style="position:absolute;top:200px;margin-left:10%;">Enter Service Details</a>
 					<!-- Modal -->
 						<div id="SModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="SModalLabel" aria-hidden="true">
 						  <div class="modal-header">
@@ -202,7 +217,7 @@
 						  </div>
 						  <div class="modal-body">
 						    		<div class="row-fluid">
-							<form class="form-horizontal" action="insertservices.php" method="post">
+							<form class="form-horizontal" action="" method="post">
 								  <div class="control-group">
 									<label class="control-label" for="sid">Enter service id</label>
 									<div class="controls">
@@ -215,7 +230,7 @@
 									  <input type="text" name="sname" placeholder="Enter service name">
 									</div>
 								  </div>
-								  <button type="submit" class="btn btn-primary">Save changes</button>
+								  <button class="btn btn-primary" type="submit">Save changes</button>
 							</form>
 							</div>
 						 </div>
@@ -225,7 +240,7 @@
 						  </div>
 						</div>
 
-						<a href="#IModal" role="button" class="btn" data-toggle="modal" style="position:absolute;top:300px;">Enter Inventory Details</a>
+						<a href="#IModal" role="button" class="btn btn-large btn-danger" data-toggle="modal" style="position:absolute;margin-left:50%;">Enter Inventory Details</a>
 					<!-- Modal -->
 						<div id="IModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="SModalLabel" aria-hidden="true">
 						  <div class="modal-header">
@@ -234,7 +249,7 @@
 						  </div>
 						  <div class="modal-body">
 						    		<div class="row-fluid">
-							<form class="form-horizontal" action="insertinventory.php" method="post">
+							<form class="form-horizontal" action="" method="post">
 								  <div class="control-group">
 									<label class="control-label" for="iid">Enter inventory id</label>
 									<div class="controls">
@@ -259,17 +274,17 @@
 									  <input type="number" name="quan" placeholder="Enter quantity">
 									</div>
 								  </div>
-								  <button class="btn btn-primary">Save changes</button>
+								  <button class="btn btn-primary" type="submit">Save changes</button>
 							</form>
 							</div>
 						 </div>
 						  <div class="modal-footer">
-						    <button type="submit" class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+						    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
 						    
 						  </div>
 						</div>
 
-						<a href="#loginModal" role="button" class="btn" data-toggle="modal" style="position:absolute;top:400px;">Enter Inventory Details</a>
+						<!--<a href="#loginModal" role="button" class="btn" data-toggle="modal" style="position:absolute;top:400px;">Login</a>-->
 					<!-- Modal -->
 						<div id="loginModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
 						  <div class="modal-header">
@@ -278,7 +293,7 @@
 						  </div>
 						  <div class="modal-body">
 						    		<div class="row-fluid">
-							<form class="form-horizontal" action="insert.php" method="post">
+							<form class="form-horizontal" action="" method="post">
 								  <div class="control-group">
 									<label class="control-label" for="user">Username</label>
 									<div class="controls">
@@ -291,7 +306,7 @@
 									  <input type="text" name="pass" placeholder="Enter password">
 									</div>
 								  </div>
-								  <button type="submit" class="btn btn-primary">Save changes</button>
+								  <button class="btn btn-primary" type="submit">Save changes</button>
 							</form>
 							</div>
 						 </div>
@@ -300,8 +315,42 @@
 						    
 						  </div>
 						</div>
-				</div>
 
+
+						<a href="#BSModal" role="button" class="btn btn-large btn-inverse" data-toggle="modal" style="position:absolute;top:100px;margin-left:30%;">Beneficiary Services</a>
+
+					<!-- Modal -->
+						<div id="BSModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="BSModalLabel" aria-hidden="true">
+						  <div class="modal-header">
+						    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+						    <h3 id="myModalLabel">Beneficiary Services</h3>
+						  </div>
+						  <div class="modal-body">
+						    		<div class="row-fluid">
+							<form class="form-horizontal" action="" method="post">
+								  <div class="control-group">
+									<label class="control-label" for="uid">Enter UID</label>
+									<div class="controls">
+									  <input type="text" name="uid" placeholder="Enter uid">
+									</div>
+								  </div>
+								  <div class="control-group">
+									<label class="control-label" for="sid">Enter SID</label>
+									<div class="controls">
+									  <input type="text" name="sid" placeholder="Enter sid">
+									</div>
+								  </div>
+								  <button class="btn btn-large btn-primary" type="submit">Save changes</button>
+							</form>
+							</div>
+						 </div>
+						  <div class="modal-footer">
+						    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+						    
+						  </div>
+						</div>
+
+				</div>
 
 
 		</body>
