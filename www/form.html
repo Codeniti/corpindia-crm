@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+		<head>
+				<title>Framework</title>
+				 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<!-- Bootstrap -->
+				<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+				<link href="css/bootstrap-responsive.css" rel="stylesheet">
+		</head>
+		<body>
+				<script src="http://code.jquery.com/jquery.js"></script>
+				<script src="js/bootstrap.min.js"></script>
+				<script src="hoverDropDown.js"></script>
+				<div id="myCarousel" class="carousel slide">
+					  <ol class="carousel-indicators">
+					    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					    <li data-target="#myCarousel" data-slide-to="1"></li>
+					    <li data-target="#myCarousel" data-slide-to="2"></li>
+					  </ol>
+					  <!-- Carousel items -->
+					  <div class="carousel-inner">
+					  	<div class="active item">
+					    	<img src="banner2.jpg"></img>
+					    </div>
+					    <div class="item">
+					    	<img src="Banner1.jpg"></img>
+					    </div>
+					    <div class="item">
+					    	<img src="Banner3.jpg"></img>
+					    </div>
+					  </div>
+					  <!-- Carousel nav -->
+					  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+					  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+					</div>
+					<div class="navbar">
+						  <div class="navbar-inner" style="background:#ff3300;margin-top:-20px; height:100px;">
+						    <a class="brand" href="#" style="color:black;">CORP INDIA</a>
+						    <ul class="nav">
+						      <li class="active"><a href="#">Home</a></li>
+						      <li><a href="#">Link</a></li>
+						      <li><a href="#">Link</a></li>
+						    </ul>
+						  </div>
+					</div>
+				<!--<div id="topPanel" class="row-fluid" style="background:#ff3300;margin-top:-20px; height:100px; position:fixed;">
+				</div>-->
+						<!--<div class="navbar">
+							 <div class="navbar-inner">
+							    <div class="container">
+							 
+							      <!-- .btn-navbar is used as the toggle for collapsed navbar content 
+							      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+							        <span class="icon-bar"></span>
+							        <span class="icon-bar"></span>
+							       <span class="icon-bar"></span>
+							      </a>
+							 
+							      <!-- Be sure to leave the brand out there if you want it shown 
+							      <a class="brand" href="#"></a>
+							 
+							      <!-- Everything you want hidden at 940px or less, place within here 
+							      
+							
+							   	</div>
+							 </div>
+						</div>-->
+				<!--</div>-->
+				<div id="content" class="row-fluid" style="position:absolute;top:400px;">
+						<!-- Button to trigger modal -->
+						<a href="#BModal" role="button" class="btn" data-toggle="modal">Enter Beneficiary Details</a>
+						 
+						<!-- Modal -->
+						<div id="BModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="BModalLabel" aria-hidden="true">
+						  <div class="modal-header">
+						    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+						    <h3 id="myModalLabel">Beneficiary Registration</h3>
+						  </div>
+						  <div class="modal-body">
+						    		<div class="row-fluid">
+							<form class="form-horizontal" action="insertbene.php" method="post">
+								  <div class="control-group">
+									<label class="control-label" for="name">Enter Name</label>
+									<div class="controls">
+									  <input type="text" name="name" placeholder="Enter name">
+									</div>
+								  </div>
+								  <div class="control-group">
+									<label class="control-label" for="mother_name">Enter mother's name</label>
+									<div class="controls">
+									  <input type="text" name="mother_name" placeholder="Enter mother's name">
+									</div>
+								  </div>
+								  <div class="control-group">
+									<label class="radio">
+										Gender:<div class="controls">
+												<input type="radio" name="male" id="male" value="Male">Male</input>
+										</div>
+									</label>
+									<label class="radio">
+										<div class="controls">
+												<input type="radio" name="female" id="female" value="Female">Female</input>
+										</div>
+									</label>
+								  </div>
+								  <div class="control-group">
+									<label class="control-label" for="id_mark1">Enter identification mark 1</label>
+									<div class="controls">
+									  <input type="text" name="id_mark1" placeholder="Enter identification mark">
+									</div>
+								  </div>
+								  <div class="control-group">
+									<label class="control-label" for="id_mark2">Enter identification mark 2</label>
+									<div class="controls">
+									  <input type="text" name="id_mark2" placeholder="Enter identification mark">
+									</div>
+								  </div>
+								  <div class="control-group">
+									<label class="control-label" for="dob">Enter Date of birth</label>
+									<div class="controls">
+									  <input type="date" name="dob" placeholder="Enter DOB">
+									</div>
+								  </div>
+								   <div class="control-group">
+									<label class="control-label" for="loc">Enter location</label>
+									<div class="controls">
+									  <input type="text" name="loc" placeholder="Enter location">
+									</div>
+								  </div>
+								  <div class="control-group">
+									<label class="control-label" for="cid">Enter centre id</label>
+									<div class="controls">
+									  <input type="text" name="cid" placeholder="Enter centre id">
+									</div>
+								  </div>
+								  <div class="control-group">
+									<label class="control-label" for="Picture">Upload Picture</label>
+										<div class="controls">
+												<input type="image" src="insertImg.png" name="img" value="uploadImage" style="height:2.5em; width:2.5em;">
+										</div>
+									</div>
+								<div class="control-group">
+									<label class="control-label" for="fid">Enter finger print id</label>
+									<div class="controls">
+									  <input type="text" name="fid" placeholder="Enter finger print id">
+									</div>
+								  </div>
+								<button type="submit" class="btn btn-primary">Save changes</button>
+
+								  
+								</form>
+							</div>
+						 </div>
+						  <div class="modal-footer">
+						    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+						  </div>
+						</div>
+					<a href="#CModal" role="button" class="btn" data-toggle="modal" style="position:absolute;top:100px;">Enter Centre Details</a>
+					<!-- Modal -->
+						<div id="CModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="CModalLabel" aria-hidden="true">
+						  <div class="modal-header">
+						    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+						    <h3 id="myModalLabel">Centre Registration</h3>
+						  </div>
+						  <div class="modal-body">
+						    		<div class="row-fluid">
+							<form class="form-horizontal" action="insertcentre.php" method="post">
+								  <div class="control-group">
+									<label class="control-label" for="cid">Enter Centre id</label>
+									<div class="controls">
+									  <input type="text" name="cid" placeholder="Enter id">
+									</div>
+								  </div>
+								  <div class="control-group">
+									<label class="control-label" for="cname">Enter centre name</label>
+									<div class="controls">
+									  <input type="text" name="cname" placeholder="Enter centre name">
+									</div>
+								  </div>
+								  <div class="control-group">
+									<label class="control-label" for="loc">Enter location</label>
+									<div class="controls">
+									  <input type="text" name="loc" placeholder="Enter location">
+									</div>
+								  </div>
+								  <button type="submit" class="btn btn-primary">Save changes</button>
+							</form>
+							</div>
+						 </div>
+						  <div class="modal-footer">
+						    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+						   
+						  </div>
+						</div>
+
+						<a href="#SModal" role="button" class="btn" data-toggle="modal" style="position:absolute;top:200px;">Enter Service Details</a>
+					<!-- Modal -->
+						<div id="SModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="SModalLabel" aria-hidden="true">
+						  <div class="modal-header">
+						    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+						    <h3 id="myModalLabel">Service Registration</h3>
+						  </div>
+						  <div class="modal-body">
+						    		<div class="row-fluid">
+							<form class="form-horizontal" action="insertservices.php" method="post">
+								  <div class="control-group">
+									<label class="control-label" for="sid">Enter service id</label>
+									<div class="controls">
+									  <input type="text" name="sid" placeholder="Enter id">
+									</div>
+								  </div>
+								  <div class="control-group">
+									<label class="control-label" for="sname">Enter service name</label>
+									<div class="controls">
+									  <input type="text" name="sname" placeholder="Enter service name">
+									</div>
+								  </div>
+								  <button type="submit" class="btn btn-primary">Save changes</button>
+							</form>
+							</div>
+						 </div>
+						  <div class="modal-footer">
+						    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+						    
+						  </div>
+						</div>
+
+						<a href="#IModal" role="button" class="btn" data-toggle="modal" style="position:absolute;top:300px;">Enter Inventory Details</a>
+					<!-- Modal -->
+						<div id="IModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="SModalLabel" aria-hidden="true">
+						  <div class="modal-header">
+						    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+						    <h3 id="myModalLabel">Inventory Registration</h3>
+						  </div>
+						  <div class="modal-body">
+						    		<div class="row-fluid">
+							<form class="form-horizontal" action="insertinventory.php" method="post">
+								  <div class="control-group">
+									<label class="control-label" for="iid">Enter inventory id</label>
+									<div class="controls">
+									  <input type="text" name="iid" placeholder="Enter id">
+									</div>
+								  </div>
+								  <div class="control-group">
+									<label class="control-label" for="iname">Enter inventory name</label>
+									<div class="controls">
+									  <input type="text" name="iname" placeholder="Enter inventory name">
+									</div>
+								  </div>
+								  <div class="control-group">
+									<label class="control-label" for="icid">Enter centre id</label>
+									<div class="controls">
+									  <input type="text" name="icid" placeholder="Enter centre name">
+									</div>
+								  </div>
+								  <div class="control-group">
+									<label class="control-label" for="iquan">Enter quantity</label>
+									<div class="controls">
+									  <input type="number" name="quan" placeholder="Enter quantity">
+									</div>
+								  </div>
+								  <button class="btn btn-primary">Save changes</button>
+							</form>
+							</div>
+						 </div>
+						  <div class="modal-footer">
+						    <button type="submit" class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+						    
+						  </div>
+						</div>
+
+						<a href="#loginModal" role="button" class="btn" data-toggle="modal" style="position:absolute;top:400px;">Enter Inventory Details</a>
+					<!-- Modal -->
+						<div id="loginModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+						  <div class="modal-header">
+						    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+						    <h3 id="myModalLabel">Login</h3>
+						  </div>
+						  <div class="modal-body">
+						    		<div class="row-fluid">
+							<form class="form-horizontal" action="insert.php" method="post">
+								  <div class="control-group">
+									<label class="control-label" for="user">Username</label>
+									<div class="controls">
+									  <input type="text" name="user" placeholder="Enter username">
+									</div>
+								  </div>
+								  <div class="control-group">
+									<label class="control-label" for="pass">Password</label>
+									<div class="controls">
+									  <input type="text" name="pass" placeholder="Enter password">
+									</div>
+								  </div>
+								  <button type="submit" class="btn btn-primary">Save changes</button>
+							</form>
+							</div>
+						 </div>
+						  <div class="modal-footer">
+						    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+						    
+						  </div>
+						</div>
+				</div>
+
+
+
+		</body>
+</html>
