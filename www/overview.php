@@ -69,6 +69,9 @@
 							 </div>
 						</div>-->
 				<!--</div>-->
+				<!--dynimically created division -->
+				<div id="d1">
+				</div>
 				<script type="text/javascript">
 			$(function(){ 
 				$.ajax({
@@ -78,7 +81,7 @@
 							success: function(output) { 	
 								document.getElementById('feed').innerHTML="";							
 										$.each(output, function(i, v) {
-											
+														
 										});	
 									},
 							error:function(){alert("apitry error");}
