@@ -21,7 +21,7 @@
         while($row=mysqli_fetch_array($result)){   
 			$username = @$row["username"]; 
 			$password = @$row["password"] 
-			$name=@row['name'];
+			$name=@$row['name'];
       $mother_name=@$row['mother_name'];
       $id_mark1=@$row['id_mark1'];
       $id_mark2=@$row['id_mark2'];
